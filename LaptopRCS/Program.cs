@@ -8,7 +8,7 @@ namespace LaptopRCS
     {
         static void Main(string[] args)
         {
-            Music.playMusic("music.wav");
+            Music.playMusic("iphone.wav");
 
             var laptopClass = new LaptopC()
             {
@@ -71,6 +71,7 @@ namespace LaptopRCS
                 switch (a)
                 {
                     case 1:
+                        Music.playMusic("asus.wav");
                         Console.Clear();
                         Console.WriteLine(laptopClass.on());
                         Console.WriteLine(laptopClass.ToString());
@@ -80,6 +81,7 @@ namespace LaptopRCS
                         Console.WriteLine("---------------------------------------------------");
                         break;
                     case 2:
+                        Music.playMusic("lenovo.wav");
                         Console.Clear();
                         Console.WriteLine(laptopRecord.on());
                         Console.WriteLine(laptopRecord.ToString());
@@ -89,6 +91,7 @@ namespace LaptopRCS
                         Console.WriteLine("---------------------------------------------------");
                         break;
                     case 3:
+                        Music.playMusic("hp.wav");
                         Console.Clear();
                         Console.WriteLine(laptopStruct.on());
                         Console.WriteLine(laptopStruct.ToString());
@@ -98,14 +101,18 @@ namespace LaptopRCS
                         Console.WriteLine("---------------------------------------------------");
                         break;
                     case 4:
+                        Music.playMusic("acer.wav");
                         Console.Clear();
                         Console.WriteLine(laptopRecordWith.ToString());
                         Console.WriteLine("---------------------------------------------------");
                         break;
                     case 5:
+                        Music.playMusic("iphone.wav");
+                        Console.Clear();
                         isTrue = false;
                         break;
                     default:
+                        Console.Clear();
                         Console.WriteLine("Qaytadan urining...");
                         break;
                 }
